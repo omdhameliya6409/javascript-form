@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #data div img{
+            height: 200px;
+            width: auto;
+        }
+        #data{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);      
+        }
+        p{
+            background-color: brown;
+            color: aliceblue;
+        }
+        button{
+            border: 2px solid black;
+            box-shadow: 2px 2px 2px 2px green;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <input type="text" placeholder="title" id="title" required>
+        <p id="t-error"></p>
+        <input type="src" placeholder="img" id="img" required>
+        <input type="number" placeholder="Price" id="Price" required>
+        <h1 id="p-error"></h1>
+        <input type="text" placeholder="password" id="password" required>
+        <h6 id="pass-e"></h6>
+        <input type="submit">
+    </form>
+    <hr>
+    <div id="data">
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
